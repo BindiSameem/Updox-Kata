@@ -130,6 +130,18 @@ public class PrimeNumberGeneratorTest {
 		assertEquals(0, result.size());
 	}
 	
+	@Test
+	public void the_range_of_11_to_1_returns_five_prime_numbers_in_ascending_order() {
+		//arrange
+		int startValue = 11;
+		int endValue = 1;
+		
+		//act
+		List<Integer> result = target.generate(startValue, endValue);
+
+		//assert
+		assertEquals(5, result.size());
+	}
 	
 	
 	
