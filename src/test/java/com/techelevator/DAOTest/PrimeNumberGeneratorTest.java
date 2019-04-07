@@ -64,7 +64,23 @@ public class PrimeNumberGeneratorTest {
 		assertEquals(new Integer(5), result.get(2));
 	}
 	
-	
+	@Test
+	public void the_range_of_2_to_7_returns_four_prime_numbers() {
+		//arrange
+		int startValue = 2;
+		int endValue = 7;
+		
+		//act
+		List<Integer> result = target.generate(startValue, endValue);
+		int sizeOfResult = result.size();
+		
+		//assert
+		assertEquals(4, sizeOfResult);
+		assertEquals(new Integer(2), result.get(0));
+		assertEquals(new Integer(3), result.get(1));
+		assertEquals(new Integer(5), result.get(2));
+		assertEquals(new Integer(7), result.get(3));
+	}
 	
 	
 	
