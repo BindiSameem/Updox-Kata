@@ -1,10 +1,24 @@
 package com.techelevator.AppRunner;
 
+import com.techelevator.View.View;
+
 public class AppRunner {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private View view;
+	
 
+	public AppRunner(View menu) {
+		this.view = view;
+	}
+
+	public void run() {
+		
+	}
+	
+	public static void main(String[] args) {
+		View menu = new View(System.in, System.out);
+		AppRunner application = new AppRunner(menu);
+		application.run();
 	}
 
 }
