@@ -19,4 +19,11 @@ public class View {
 		out.print("This App returns list of prime numbers in the given range of positive integers.\n");
 		out.flush();
 	}
+	
+	public int getFirstInputFromUser() {
+		out.print("\nPlease enter start integer: ");
+		out.flush();
+		String input = in.nextLine();
+		return Integer.valueOf(input);
+	}
 }
