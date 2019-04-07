@@ -82,7 +82,19 @@ public class PrimeNumberGeneratorTest {
 		assertEquals(new Integer(7), result.get(3));
 	}
 	
-	
+	@Test
+	public void the_range_of_2_to_11_returns_five_prime_numbers() {
+		//arrange
+		int startValue = 2;
+		int endValue = 11;
+		
+		//act
+		List<Integer> result = target.generate(startValue, endValue);
+		int sizeOfResult = result.size();
+		
+		//assert
+		assertEquals(5, sizeOfResult);
+	}
 	
 	
 	
