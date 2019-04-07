@@ -43,5 +43,7 @@ public class PrimeNumberGeneratorTest {
 		
 		//assert
 		assertEquals(2, sizeOfResult);
+		assertEquals(new Integer(2), result.get(0));
+		assertEquals(new Integer(3), result.get(1));
 	}
 }

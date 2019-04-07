@@ -9,7 +9,7 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 	public List<Integer> generate(int startValue, int endValue) {
 		List<Integer> listOfPrimeNumbers = new ArrayList<Integer>();
 		for(int i = startValue; i <= endValue; i++) {
-			if(i == 2) {
+			if(isPrime(i)) {
 				listOfPrimeNumbers.add(i);
 			}
 		}
@@ -18,8 +18,12 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 
 	@Override
 	public boolean isPrime(int value) {
-		
-		return false;
+		for(int j = 2; j < value; j++) {
+			if(value % j == 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 }
