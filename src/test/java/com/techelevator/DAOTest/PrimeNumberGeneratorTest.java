@@ -146,11 +146,5 @@ public class PrimeNumberGeneratorTest {
 		assertEquals(new Integer(5), result.get(2));
 		assertEquals(new Integer(7), result.get(3));
 		assertEquals(new Integer(11), result.get(4));
-	}
-	
-	
-	
-	
-	
-	
+	}	
 }

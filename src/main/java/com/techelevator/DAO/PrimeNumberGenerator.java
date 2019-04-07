@@ -32,5 +32,4 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 		}
 		return true;
 	}
-
 }
