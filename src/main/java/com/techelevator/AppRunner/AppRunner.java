@@ -7,17 +7,17 @@ public class AppRunner {
 	private View view;
 	
 
-	public AppRunner(View menu) {
+	public AppRunner(View view) {
 		this.view = view;
 	}
 
 	public void run() {
-		
+		view.displayWelcomeScreen();
 	}
 	
 	public static void main(String[] args) {
-		View menu = new View(System.in, System.out);
-		AppRunner application = new AppRunner(menu);
+		View view = new View(System.in, System.out);
+		AppRunner application = new AppRunner(view);
 		application.run();
 	}
 
