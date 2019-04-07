@@ -14,6 +14,7 @@ public class AppRunner {
 	public void run() {
 		view.displayWelcomeScreen();
 		int startValue = view.getFirstInputFromUser();
+		int endValue = view.getSecondInputFromUser();
 	}
 	
 	public static void main(String[] args) {

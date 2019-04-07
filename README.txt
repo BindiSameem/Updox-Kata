@@ -9,6 +9,7 @@ BUILT WITH:
 	2. TEST - JUnit Test framework
 
 RUN TESTS:
-To run tests in eclipse 
+To run tests for PrimeNumberGenerator in eclipse 
 	1. select PrimeNumberGeneratorTest from the com.techelevator.DAOTest
 	2. right click and select RunAs JUnit Test
+AppRunner and View classes are tested via terminal.
