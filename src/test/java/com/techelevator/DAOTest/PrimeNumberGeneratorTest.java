@@ -101,7 +101,18 @@ public class PrimeNumberGeneratorTest {
 		assertEquals(new Integer(11), result.get(4));
 	}
 	
-	
+	@Test
+	public void the_range_of_7900_to_7920_returns_three_prime_numbers() {
+		// arrange
+		int startValue = 7900;
+		int endValue = 7920;
+
+		// act
+		List<Integer> generated = target.generate(startValue, endValue);
+
+		// assert
+		assertEquals(3, generated.size());
+	}
 	
 	
 	
