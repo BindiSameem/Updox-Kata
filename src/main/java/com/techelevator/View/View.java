@@ -3,6 +3,7 @@ package com.techelevator.View;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.Scanner;
 
 public class View {
@@ -32,7 +33,7 @@ public class View {
 			} catch (Exception e) {
 				out.print("\nNot a valid entry.\n");
 				out.flush();
-			}
+			} 
 		}
 	}
 	
@@ -50,5 +51,14 @@ public class View {
 				out.flush();
 			}
 		}
+	}
+	
+	public void printPrimeNumbers(List<Integer> primeNumbers) {
+		out.print("\nThe list of prime numbers: ");
+		out.print("\n");
+		for(Integer i : primeNumbers) {
+			out .println(i);
+		}
+		out.flush();
 	}
 }
