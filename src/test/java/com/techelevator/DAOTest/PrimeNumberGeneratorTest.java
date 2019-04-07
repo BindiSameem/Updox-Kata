@@ -108,10 +108,13 @@ public class PrimeNumberGeneratorTest {
 		int endValue = 7920;
 
 		// act
-		List<Integer> generated = target.generate(startValue, endValue);
+		List<Integer> result = target.generate(startValue, endValue);
 
 		// assert
-		assertEquals(3, generated.size());
+		assertEquals(3, result.size());
+		assertEquals(new Integer(7901), result.get(0));
+		assertEquals(new Integer(7907), result.get(1));
+		assertEquals(new Integer(7919), result.get(2));
 	}
 	
 	
