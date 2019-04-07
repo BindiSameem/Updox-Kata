@@ -128,7 +128,6 @@ public class PrimeNumberGeneratorTest {
 		
 		//assert
 		assertEquals(0, result.size());
-
 	}
 	
 	
