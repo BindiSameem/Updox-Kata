@@ -8,6 +8,13 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 	@Override
 	public List<Integer> generate(int startValue, int endValue) {
 		List<Integer> listOfPrimeNumbers = new ArrayList<Integer>();
+		
+		if( endValue < startValue) {
+			int storeStartValue = startValue;
+			startValue = endValue;
+			endValue = storeStartValue;
+		}
+		
 		for(int i = startValue; i <= endValue; i++) {
 			if(isPrime(i) && (i != 1)) {
 				listOfPrimeNumbers.add(i);
