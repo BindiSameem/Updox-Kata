@@ -22,7 +22,7 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 		}
 		return listOfPrimeNumbers;
 	}
-
+  
 	@Override
 	public boolean isPrime(int value) {
 		for(int j = 2; j < value; j++) {
