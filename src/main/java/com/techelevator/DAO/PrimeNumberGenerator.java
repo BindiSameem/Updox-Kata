@@ -14,7 +14,7 @@ public class PrimeNumberGenerator implements PrimeNumberGeneratorInterface{
 			startValue = endValue;
 			endValue = storeStartValue;
 		}
-		
+		 
 		for(int i = startValue; i <= endValue; i++) {
 			if(isPrime(i) && (i != 1)) {
 				listOfPrimeNumbers.add(i);

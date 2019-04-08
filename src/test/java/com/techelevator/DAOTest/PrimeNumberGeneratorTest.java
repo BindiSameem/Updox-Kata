@@ -30,7 +30,7 @@ public class PrimeNumberGeneratorTest {
 		//assert
 		assertEquals(1, sizeOfResult);
 	}
-	
+	 
 	@Test
 	public void the_range_of_2_to_3_returns_two_prime_numbers() {
 		//arrange

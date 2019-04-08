@@ -19,8 +19,8 @@ public class AppRunner {
 	public void run() {
 		while (true) {
 			view.displayWelcomeScreen();
-			int startValue = view.getInputFromUser(1);
-			int endValue = view.getInputFromUser(2);
+			int startValue = view.getInputFromUser(new String("start"));
+			int endValue = view.getInputFromUser(new String("end"));
 			List<Integer> primeNumbers = primeInterface.generate(startValue, endValue);
 			view.printPrimeNumbers(primeNumbers);
 			String userChoice = view.askUserForNextAction();
