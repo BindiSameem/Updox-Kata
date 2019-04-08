@@ -7,7 +7,7 @@ Definition(from wikipedia):
 In mathematics, a prime number (or a prime) is a natural number 
 which has exactly two distinct natural number divisors: 1 and itself.
 
-BUILD STATUS: UNDER BUILD
+BUILD STATUS: BUILT
 
 BUILT WITH: 
 	1. JAVA - ECLIPSE
